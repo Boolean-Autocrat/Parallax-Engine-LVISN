@@ -5,6 +5,10 @@
     -webkit-text-fill-color: rgba(0, 0, 0, 0)
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --si-blue: #0d6efd;
     --si-indigo: #6610f2;
@@ -17323,6 +17327,12 @@ img-comparison-slider:focus {
 }
 
 .profit-steps:hover {
+    -webkit-box-shadow: 0 12px 8px -8px #6366f1;
+    -moz-box-shadow: 0 12px 8px -8px #6366f1;
+    box-shadow: 0 12px 8px -8px #6366f1;
+}
+
+.insight:hover {
     -webkit-box-shadow: 0 12px 8px -8px #6366f1;
     -moz-box-shadow: 0 12px 8px -8px #6366f1;
     box-shadow: 0 12px 8px -8px #6366f1;
