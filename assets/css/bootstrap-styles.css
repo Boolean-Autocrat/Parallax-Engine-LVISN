@@ -95,8 +95,7 @@ body {
     text-align: var(--si-body-text-align);
     background-color: var(--si-body-bg);
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    cursor: url('https://boolean-autocrat.github.io/Parallax-Engine-LVISN/assets/custom-cursor.png'), auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
 hr {
