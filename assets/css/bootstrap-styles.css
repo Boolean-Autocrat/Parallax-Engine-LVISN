@@ -17344,11 +17344,15 @@ img-comparison-slider:focus {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border: 3px solid #6366f1;
+    border: 2px solid #6366f1;
 }
 
 @media (max-width: 1024px) {
     #custom-cursor {
         display: none;
     }
+}
+
+body {
+    cursor: url('/assets/img/custom-cursor.png'), auto;
 }
