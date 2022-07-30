@@ -17352,7 +17352,3 @@ img-comparison-slider:focus {
         display: none;
     }
 }
-
-body {
-    cursor: url('/assets/img/custom-cursor.png'), auto;
-}
