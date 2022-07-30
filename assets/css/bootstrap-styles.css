@@ -17337,3 +17337,22 @@ img-comparison-slider:focus {
     -moz-box-shadow: 0 12px 8px -8px #6366f1;
     box-shadow: 0 12px 8px -8px #6366f1;
 }
+
+#custom-cursor {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #6366f1;
+}
+
+@media (max-width: 1024px) {
+    #custom-cursor {
+        display: none;
+    }
+}
+
+body {
+    cursor: url('/assets/img/custom-cursor.png'), auto;
+}

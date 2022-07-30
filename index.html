@@ -8,7 +8,7 @@
     <!-- SEO Meta Tags -->
     <meta name="description" content="The Parallax Engine | Making Stock Forecasting Easier">
     <meta name="keywords" content="quantitative analysis, data science, neural engine, stock market, parallax engine, finance">
-    <meta name="author" content="Co-Authored by Suyash Handa, Samyak Rai">
+    <meta name="author" content="Suyash Handa">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,15 +32,14 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#9243C8">
 
-    <!-- Vendor Styles -->
-    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css" />
     <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css" />
 
     <!-- Main Theme Styles + Bootstrap -->
     <link rel="stylesheet" media="screen" href="assets/css/bootstrap-styles.css">
+    <!-- Icons Plugins-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Page loading styles -->
     <style>
         .page-loading {
@@ -165,6 +164,8 @@
             <div class="page-spinner"></div><span>Loading...</span>
         </div>
     </div>
+    <div id="custom-cursor">
+    </div>
     <main class="page-wrapper">
         <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
             <div class="container px-3">
@@ -202,7 +203,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
                 <a href="" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex">
-                    <i class="bx bx-cart fs-5 lh-1 me-1"></i> &nbsp;Book Consultation
+                    <i class="fa-solid fa-cart-shopping"></i> &nbsp;Book Consultation
                 </a>
             </div>
         </header>
@@ -438,11 +439,11 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-center justify-content-md-start pt-2 pt-lg-3">
-                            <button type="button" id="prev-screen" class="btn btn-prev btn-icon btn-sm me-2">
-                  <i class="bx bx-chevron-left"></i>
+                            <button style="z-index: 10;" type="button" id="prev-screen" class="btn btn-prev btn-icon btn-sm me-2">
+                  <i class="fa-solid fa-chevron-left"></i>
                 </button>
-                            <button type="button" id="next-screen" class="btn btn-next btn-icon btn-sm ms-2">
-                  <i class="bx bx-chevron-right"></i>
+                            <button style="z-index: 10;" type="button" id="next-screen" class="btn btn-next btn-icon btn-sm ms-2">
+                  <i class="fa-solid fa-chevron-right"></i>
                 </button>
                         </div>
                     </div>
@@ -454,11 +455,11 @@
                 <div class="col-lg-3 col-md-4">
                     <h2 class="h1 text-center text-md-start mx-auto mx-md-0 pb-3 pb-sm-4 pb-md-0 pt-md-2" style="max-width: 300px;">What <br class="d-none d-md-inline">Investors Say <br class="d-none d-md-inline">About The Parallax Engine:</h2>
                     <div class="d-none d-md-flex justify-content-center justify-content-md-start pb-4 mb-2 pt-2 pt-md-4 mt-md-5">
-                        <button type="button" id="prev-testimonial" class="btn btn-prev btn-icon btn-sm me-2">
-                <i class="bx bx-chevron-left"></i>
+                        <button style="z-index: 5;" type="button" id="prev-testimonial" class="btn btn-prev btn-icon btn-sm me-2">
+                <i class="fa-solid fa-chevron-left"></i>
               </button>
-                        <button type="button" id="next-testimonial" class="btn btn-next btn-icon btn-sm ms-2">
-                <i class="bx bx-chevron-right"></i>
+                        <button style="z-index: 5;" type="button" id="next-testimonial" class="btn btn-next btn-icon btn-sm ms-2">
+                <i class="fa-solid fa-chevron-right"></i>
               </button>
                     </div>
                 </div>
@@ -492,17 +493,17 @@
                                 <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0 mx-2">
                                     <div class="card h-100 position-relative border-0 shadow-sm pt-4">
                                         <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
-                        <i class="bx bxs-quote-left"></i>
+                        <i class="fa-solid fa-quote-left"></i>
                       </span>
                                         <blockquote class="card-body pb-3 mb-0">
                                             <p class="mb-0"><i>The Parallax Engine</i> is a must for investors all over the country. Having reviewed their algorithms myself, I strongly recommend investors of today to try out <i>The Parallax Engine</i>.</p>
                                         </blockquote>
                                         <div class="card-footer border-0 text-nowrap pt-0">
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bx-star text-muted opacity-75"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-muted opacity-75"></i>
                                         </div>
                                     </div>
                                     <figcaption class="ps-4 pt-4">
@@ -515,17 +516,17 @@
                                 <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0 mx-2">
                                     <div class="card h-100 position-relative border-0 shadow-sm pt-4">
                                         <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
-                        <i class="bx bxs-quote-left"></i>
+                        <i class="fa-solid fa-quote-left"></i>
                       </span>
                                         <blockquote class="card-body pb-3 mb-0">
                                             <p class="mb-0">Phenomenal job done by the 5,000+ data scientists at <i>The Parallax Engine</i>. Investors <strong>need</strong> to try this out quick, it is beyond anything in the market!</p>
                                         </blockquote>
                                         <div class="card-footer border-0 text-nowrap pt-0">
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
                                         </div>
                                     </div>
                                     <figcaption class="ps-4 pt-4">
@@ -538,17 +539,17 @@
                                 <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0 mx-2">
                                     <div class="card h-100 position-relative border-0 shadow-sm pt-4">
                                         <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
-                        <i class="bx bxs-quote-left"></i>
+                        <i class="fa-solid fa-quote-left"></i>
                       </span>
                                         <blockquote class="card-body pb-3 mb-0">
                                             <p class="mb-0"><i>The Parallax Engine</i> has become an asset for my investments. I was able to get all the support I needed, 24/7 and I'm earning more than ever!</p>
                                         </blockquote>
                                         <div class="card-footer border-0 text-nowrap pt-0">
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bx-star text-muted opacity-75"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-muted opacity-75"></i>
                                         </div>
                                     </div>
                                     <figcaption class="ps-4 pt-4">
@@ -561,17 +562,17 @@
                                 <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0 mx-2">
                                     <div class="card h-100 position-relative border-0 shadow-sm pt-4">
                                         <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
-                        <i class="bx bxs-quote-left"></i>
+                        <i class="fa-solid fa-quote-left"></i>
                       </span>
                                         <blockquote class="card-body pb-3 mb-0">
                                             <p class="mb-0">Looks like <i>The Parallax Engine</i> is looking to help out modern-day investors with their highly-technological solutions. I love it myself!</p>
                                         </blockquote>
                                         <div class="card-footer border-0 text-nowrap pt-0">
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
-                                            <i class="bx bxs-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
                                         </div>
                                     </div>
                                     <figcaption class="ps-4 pt-4">
@@ -597,11 +598,11 @@
                                 <div class="col">
                                     <h3 class="fs-base fw-normal opacity-60 mb-2">App Store</h3>
                                     <div class="text-nowrap text-warning pb-1 mb-2">
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
                                     </div>
                                     <h4 class="mb-1">Editor's Choice</h4>
                                     <p class="mb-0">rating 4.7, 187K+ reviews</p>
@@ -617,11 +618,11 @@
                                 <div class="col">
                                     <h3 class="fs-base fw-normal opacity-60 mb-2">Google Play</h3>
                                     <div class="text-nowrap text-warning pb-1 mb-2">
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
-                                        <i class="bx bxs-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
                                     </div>
                                     <h4 class="mb-1">App of the Month</h4>
                                     <p class="mb-0">rating 4.8, 30K+ reviews</p>
@@ -696,20 +697,20 @@
                     </div>
 
                     <!-- Row -->
-                    <div class="d-lg-table-row w-sm-50 w-lg-100 pe-sm-3 pe-lg-0 mb-3 mb-lg-0">
-                        <div class="d-lg-table-cell align-middle border-bottom py-3 py-lg-4">
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/crypto/eth.png" width="32" alt="Ethereum">
-                                <div class="ps-3">
-                                    <h3 class="h4 mb-0">Ethereum<span class="d-inlin-block opacity-60 ps-2 ms-1">ETH</span></h3>
+                    <div class="d-lg-table-row w-sm-50 w-lg-100 pe-sm-3 pe-lg-0 mb-3 mb-lg-0 ">
+                        <div class="d-lg-table-cell align-middle border-bottom py-3 py-lg-4 ">
+                            <div class="d-flex align-items-center ">
+                                <img src="assets/img/crypto/eth.png " width="32 " alt="Ethereum ">
+                                <div class="ps-3 ">
+                                    <h3 class="h4 mb-0 ">Ethereum<span class="d-inlin-block opacity-60 ps-2 ms-1 ">ETH</span></h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="d-lg-table-cell align-middle h4 border-bottom py-3 py-lg-4 mb-0">$2,829.07</div>
-                        <div class="d-lg-table-cell align-middle fs-lg text-success border-bottom py-3 py-lg-4">+1.27%</div>
-                        <div class="d-lg-table-cell align-middle fs-lg text-white border-bottom py-3 py-lg-4">$337,863,906,048.53</div>
-                        <div class="d-lg-table-cell align-middle border-bottom-lg py-3 py-lg-4">
-                            <img src="assets/img/crypto/graphs/eth.svg" width="108" alt="ETH graph">
+                        <div class="d-lg-table-cell align-middle h4 border-bottom py-3 py-lg-4 mb-0 ">$2,829.07</div>
+                        <div class="d-lg-table-cell align-middle fs-lg text-success border-bottom py-3 py-lg-4 ">+1.27%</div>
+                        <div class="d-lg-table-cell align-middle fs-lg text-white border-bottom py-3 py-lg-4 ">$337,863,906,048.53</div>
+                        <div class="d-lg-table-cell align-middle border-bottom-lg py-3 py-lg-4 ">
+                            <img src="assets/img/crypto/graphs/eth.svg " width="108 " alt="ETH graph ">
                         </div>
                         <div class="d-lg-table-cell align-middle border-bottom-lg text-lg-end pt-2 pb-3 py-lg-4">
                             <button type="button" class="btn btn-sm btn-outline-secondary fs-sm w-100 w-lg-auto">Trade</button>
@@ -717,20 +718,20 @@
                     </div>
 
                     <!-- Row -->
-                    <div class="d-lg-table-row w-sm-50 w-lg-100 ps-sm-3 ps-lg-0 mb-3 mb-lg-0">
-                        <div class="d-lg-table-cell align-middle border-bottom py-3 py-lg-4">
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/crypto/dot.png" width="32" alt="Polkadot">
-                                <div class="ps-3">
-                                    <h3 class="h4 mb-0">Polkadot<span class="d-inlin-block opacity-60 ps-2 ms-1">DOT</span></h3>
+                    <div class="d-lg-table-row w-sm-50 w-lg-100 ps-sm-3 ps-lg-0 mb-3 mb-lg-0 ">
+                        <div class="d-lg-table-cell align-middle border-bottom py-3 py-lg-4 ">
+                            <div class="d-flex align-items-center ">
+                                <img src="assets/img/crypto/dot.png " width="32 " alt="Polkadot ">
+                                <div class="ps-3 ">
+                                    <h3 class="h4 mb-0 ">Polkadot<span class="d-inlin-block opacity-60 ps-2 ms-1 ">DOT</span></h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="d-lg-table-cell align-middle h4 border-bottom py-3 py-lg-4 mb-0">$13.28</div>
-                        <div class="d-lg-table-cell align-middle fs-lg text-danger border-bottom py-3 py-lg-4">-1.35%</div>
-                        <div class="d-lg-table-cell align-middle fs-lg text-white border-bottom py-3 py-lg-4">$26,143,724,006.81</div>
-                        <div class="d-lg-table-cell align-middle border-bottom-lg py-3 py-lg-4">
-                            <img src="assets/img/crypto/graphs/dot.svg" width="108" alt="DOT graph">
+                        <div class="d-lg-table-cell align-middle h4 border-bottom py-3 py-lg-4 mb-0 ">$13.28</div>
+                        <div class="d-lg-table-cell align-middle fs-lg text-danger border-bottom py-3 py-lg-4 ">-1.35%</div>
+                        <div class="d-lg-table-cell align-middle fs-lg text-white border-bottom py-3 py-lg-4 ">$26,143,724,006.81</div>
+                        <div class="d-lg-table-cell align-middle border-bottom-lg py-3 py-lg-4 ">
+                            <img src="assets/img/crypto/graphs/dot.svg " width="108 " alt="DOT graph ">
                         </div>
                         <div class="d-lg-table-cell align-middle border-bottom-lg text-lg-end pt-2 pb-3 py-lg-4">
                             <button type="button" class="btn btn-sm btn-outline-secondary fs-sm w-100 w-lg-auto">Trade</button>
@@ -740,13 +741,13 @@
             </div>
         </section>
         <div id="insights"></div>
-        <section class="dark-mode bg-dark position-relative pt-lg-4 pt-xl-5 overflow-hidden">
-            <div class="position-absolute top-0 start-0 w-100 h-100 bg-secondary"></div>
-            <div class="container position-relative zindex-3 pt-5">
-                <h2 class="h1 mb-5">Insights Into The Parallax Engine</h2>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div style="background: #ffffff; border-radius: 20px;" class=" container insight">
+        <section class="dark-mode bg-dark position-relative pt-lg-4 pt-xl-5 overflow-hidden ">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-secondary "></div>
+            <div class="container position-relative zindex-3 pt-5 ">
+                <h2 class="h1 mb-5 ">Insights Into The Parallax Engine</h2>
+                <div class="row ">
+                    <div style="margin-bottom: 20px; " class="col-sm-6 ">
+                        <div style="background: #ffffff; border-radius: 20px; " class=" container insight ">
                             <h2 style="text-align: center; color: #6366f1; ">
                                 SMA
                             </h2>
@@ -763,7 +764,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 ">
-                        <div style="background: #ffffff; border-radius: 20px;" class="container insight">
+                        <div style="background: #ffffff; border-radius: 20px; " class="container insight ">
                             <h2 style="text-align: center; color: #6366f1; ">
                                 EMA
                             </h2>
@@ -780,9 +781,9 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin-top: 2rem; margin-bottom: 2rem;" class="row">
-                    <div class="col-sm-12">
-                        <div style="background: #ffffff; border-radius: 20px;" class="container insight">
+                <div style="margin-top: 2rem; margin-bottom: 2rem; " class="row ">
+                    <div class="col-sm-12 ">
+                        <div style="background: #ffffff; border-radius: 20px; " class="container insight ">
                             <h2 style="text-align: center; color: #6366f1; ">
                                 ESN & LSTM
                             </h2>
@@ -796,15 +797,15 @@
                                     </p>
                                 </div>
                             </div>
-                            <div style="margin-top: 2rem;" class="row">
-                                <div class="col-sm-6">
-                                    <p style="color: #000000;">
+                            <div style="margin-top: 2rem; " class="row ">
+                                <div class="col-sm-6 ">
+                                    <p style="color: #000000; ">
                                         To account for the chaotic dynamics of the stock market, Echo State Networks (ESN) is proposed.<br><br>As a new invention within the RNN (Recurrent Neural Networks) family, ESN utilizes a hidden layer with several
                                         neurons flowing and loosely interconnected.<br><br> This Reservoir acts as a dynamic Neural Engine.
                                     </p>
                                 </div>
-                                <div class="col-sm-6">
-                                    <img src="assets/img/esn-lstm-equation-2.png">
+                                <div class="col-sm-6 ">
+                                    <img src="assets/img/esn-lstm-equation-2.png ">
                                 </div>
                             </div>
                         </div>
@@ -823,7 +824,7 @@
                         <p class="mb-1 mb-md-2 ">Chat support with our customer service specialists.</p>
                         <a href="index.html# " class="btn btn-link px-0 ">
                 Talk to us
-                <i class="bx bx-right-arrow-alt fs-xl ms-2 "></i>
+                <i class="fa-solid fa-arrow-right fs-xl ms-2 "></i>
               </a>
                     </div>
                 </div>
@@ -836,7 +837,7 @@
                         <p class="mb-1 mb-md-2 ">Find answers. Learn more about the features and services.</p>
                         <a href="index.html# " class="btn btn-link px-0 ">
                 Learn more
-                <i class="bx bx-right-arrow-alt fs-xl ms-2 "></i>
+                <i class="fa-solid fa-arrow-right fs-xl ms-2 "></i>
               </a>
                     </div>
                 </div>
@@ -849,7 +850,7 @@
                         <p class="mb-1 mb-md-2 ">Please feel free to drop any questions to our email.</p>
                         <a href="index.html# " class="btn btn-link px-0 ">
                 Drop us a line
-                <i class="bx bx-right-arrow-alt fs-xl ms-2 "></i>
+                <i class="fa-solid fa-arrow-right fs-xl ms-2 "></i>
               </a>
                     </div>
                 </div>
@@ -875,17 +876,17 @@
                 </a>
             </div>
             <div class="d-flex justify-content-center pt-4 mt-lg-3 ">
-                <a href="index.html# " class="btn btn-icon btn-secondary btn-facebook mx-2 ">
-                    <i class="fa-brands fa-facebook"></i>
+                <a href="index.html#" class="btn btn-icon btn-secondary btn-facebook mx-2 ">
+                    <i style="z-index: 5;" class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="index.html# " class="btn btn-icon btn-secondary btn-instagram mx-2 ">
-                    <i class="fa-brands fa-instagram"></i>
+                <a href="index.html#" class="btn btn-icon btn-secondary btn-instagram mx-2 ">
+                    <i style="z-index: 5;" class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="index.html# " class="btn btn-icon btn-secondary btn-twitter mx-2 ">
-                    <i class="fa-brands fa-twitter"></i>
+                <a href="index.html#" class="btn btn-icon btn-secondary btn-twitter mx-2 ">
+                    <i style="z-index: 5;" class="fa-brands fa-twitter"></i>
                 </a>
-                <a href="index.html# " class="btn btn-icon btn-secondary btn-youtube mx-2 ">
-                    <i class="fa-brands fa-youtube"></i>
+                <a href="index.html#" class="btn btn-icon btn-secondary btn-youtube mx-2 ">
+                    <i style="z-index: 5;" class="fa-brands fa-youtube"></i>
                 </a>
             </div>
             <p class="nav d-block fs-sm text-center pt-5 mt-lg-4 mb-0 ">
@@ -896,7 +897,7 @@
     </footer>
     <a href="index.html#top " class="btn-scroll-top " data-scroll>
         <span class="btn-scroll-top-tooltip text-muted fs-sm me-2 ">Top</span>
-        <i class="btn-scroll-top-icon bx bx-chevron-up "></i>
+        <i class="btn-scroll-top-icon fa-solid fa-chevron-up "></i>
     </a>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js "></script>
     <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js "></script>
